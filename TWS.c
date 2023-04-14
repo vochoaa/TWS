@@ -185,7 +185,8 @@ void *connection_handler(void *socket_desc){
     }
 
     // Descriptor memory Cerrar el socket y libera la memoria del descriptor de socket
-    close(sock);
+ 
+  close(sock);
     free(socket_desc);
 
     return NULL;
