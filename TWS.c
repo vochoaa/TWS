@@ -152,7 +152,7 @@ int main(int argc,char const *argv[]){
 
         // Código para manejar error 400
         else if(strncmp(buffer, "HTTP/1.1 400 Bad Request", 23) == 0){
-            printf("Error 400: Bad Request\n");
+             printf("Error 400: Bad Request\n");
             exit(EXIT_FAILURE);
         }
 
