@@ -7,6 +7,7 @@
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <pthread.h>
+#include <fcntl.h>
 
 #define BUFFER_SIZE 4096
 #define MAX_FILE_SIZE 4096
