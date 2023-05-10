@@ -9,8 +9,8 @@
 #include <pthread.h>
 #include <fcntl.h>
 
-#define BUFFER_SIZE 32767
-#define MAX_FILE_SIZE 32767
+#define BUFFER_SIZE 1024000
+#define MAX_FILE_SIZE 1024000
 #define MAX_CLIENTS 10
 
 // void *connection_handler(void *); para función de hilos
@@ -58,7 +58,7 @@ int main(int argc, char const *argv[])
     int addrlen = sizeof(address);                    // Tamaño de la direccion del cliente.
     char buffer[BUFFER_SIZE] = {0};                   // Buffer para almacenar los datos recibidos y enviados.
     char file_content[MAX_FILE_SIZE] = {0};           // Contenido del archivo.
-    char response[32767] = {0};                        // Respuesta del servidor.
+    char response[1024000] = {0};                        // Respuesta del servidor.
     char *content_type;                               // Tipo de archivo.
     const char *server = "TWS";                       // Nombre del servidor.
     char date[128];                                   // Fecha.
