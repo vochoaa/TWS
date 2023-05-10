@@ -58,7 +58,7 @@ int main(int argc, char const *argv[])
     int addrlen = sizeof(address);                    // Tamaño de la direccion del cliente.
     char buffer[BUFFER_SIZE] = {0};                   // Buffer para almacenar los datos recibidos y enviados.
     char file_content[MAX_FILE_SIZE] = {0};           // Contenido del archivo.
-    char response[1024] = {0};                        // Respuesta del servidor.
+    char response[4096] = {0};                        // Respuesta del servidor.
     char *content_type;                               // Tipo de archivo.
     const char *server = "TWS";                       // Nombre del servidor.
     char date[128];                                   // Fecha.
